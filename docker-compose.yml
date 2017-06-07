@@ -1,0 +1,7 @@
+scrapy:
+  image: fkajzer/reddit-scrapy:scraper
+  command: bash
+  volumes:
+    - .:/code
+  working_dir: /code
+  restart: always
