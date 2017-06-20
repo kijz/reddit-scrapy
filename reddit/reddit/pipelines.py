@@ -8,4 +8,5 @@
 
 class RedditPipeline(object):
     def process_item(self, item, spider):
+        item['title'] = item['title'][0]
         return item
